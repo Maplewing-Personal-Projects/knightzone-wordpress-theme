@@ -5,13 +5,16 @@ Author URI: https://knightzone.studio/
 Version: 1.0
 */
 
-body {
+html, body {
+    padding: 0px;
+    margin: 0px;
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     width: 1200px;
-    margin: 0 auto;
+    margin: -10px auto 0px auto;
+    padding: 15px 5px 5px 5px;
     border: 1px solid black;
 }
 
@@ -20,6 +23,6 @@ header .logo-section {
 }
 
 header .logo-section img {
-    width: 200px;
+    width: 400px;
     height: auto;
 }
