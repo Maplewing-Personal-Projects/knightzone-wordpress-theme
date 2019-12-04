@@ -42,6 +42,7 @@ header ul.header-menu li{
 
 header ul.header-menu li a {
     display: block;
+    height: 100px;
     padding: 8px;
     text-decoration: none;
 }
