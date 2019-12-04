@@ -15,7 +15,8 @@ body {
     background: url("images/background.png") repeat-x #001E7C;
 
     animation-name: movebackground;
-    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
