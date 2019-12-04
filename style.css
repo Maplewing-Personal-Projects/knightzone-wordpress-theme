@@ -21,6 +21,39 @@ body {
     animation-iteration-count: infinite;
 }
 
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+a {
+    color: #001E7C;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    text-decoration: underline;
+}
+
 @keyframes movebackground{
     from {
         background-position-x: 0px;
@@ -63,12 +96,6 @@ header ul.header-menu li a {
     display: block;
     height: 30px;
     padding: 8px;
-    text-decoration: none;
-    color: #001E7C;
-}
-
-header ul.header-menu li a:hover {
-    color: white;
 }
 
 .container {
