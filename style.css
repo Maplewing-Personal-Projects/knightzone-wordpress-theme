@@ -69,3 +69,15 @@ header ul.header-menu li a {
 header ul.header-menu li a:hover {
     color: white;
 }
+
+.container {
+    width: 1200px;
+    margin: 100px auto 20px auto;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
