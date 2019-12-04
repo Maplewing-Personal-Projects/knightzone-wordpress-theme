@@ -42,7 +42,8 @@ header ul.header-menu li{
 
 header ul.header-menu li a {
     display: block;
-    margin: auto;
+    height: 30px;
+    top: calc(50% - 15px);
     padding: 8px;
     text-decoration: none;
 }
