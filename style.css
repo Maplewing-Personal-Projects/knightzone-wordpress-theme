@@ -100,7 +100,7 @@ header ul.header-menu li a {
 
 .container {
     width: 1200px;
-    padding: 7%;
+    padding: 5px 7% 5px 7%;
     margin: 200px auto 20px auto;
     background-color: white;
 }
@@ -118,33 +118,13 @@ footer {
 	text-transform: none !important;
 }
 
-.btx-navbar-header {
-	padding-top: 10px;
-}
-
-ul.btx-breadcrumbs{
-	padding-top: 8px;
-}
-
-@media all and (max-width:960px){
-	.btx-navbar-header{
-		padding-top: 0px;
-	}
-	
-	ul.btx-breadcrumbs{
-	  padding-top: 0px;
-  }
-}
-
 .markdown-content p {
 	text-indent: 2em;
 }
 
-.btx-post-headline{
-	padding: 10px;
-}
-
-.btx-post-headline h1{
+h1.post-title{
+    font-size: 42px;
+    letter-spacing: -.01em;
 	text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
@@ -157,7 +137,7 @@ ul.btx-breadcrumbs{
 	margin: 0 auto;
 	border: 3px solid black;
 	width: 85%;
-  height: auto;
+    height: auto;
 }
 
 .markdown-content blockquote {
