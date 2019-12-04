@@ -20,6 +20,10 @@
 <body <?php body_class(); ?>>
  
 <header class="site-header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-    <h4><?php bloginfo('description'); ?></h4>
+    <h1><a href="<?php echo home_url(); ?>">
+    <?php
+        if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        }
+    ?></a></h1>
 </header>
