@@ -11,6 +11,10 @@ html, body {
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: url("images/background.png") repeat-x #001E7C;
+}
+
 header {
     width: 1200px;
     margin: -10px auto 0px auto;
