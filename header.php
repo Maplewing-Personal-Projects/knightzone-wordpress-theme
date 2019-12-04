@@ -20,11 +20,13 @@
 <body <?php body_class(); ?>>
  
 <header class="site-header">
-    <h1><a href="<?php echo home_url(); ?>">
+    <div class="logo-section"><a href="<?php echo home_url(); ?>">
     <?php
         if ( function_exists( 'the_custom_logo' ) ) {
             the_custom_logo();
         }
-    ?></a></h1>
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    ?></a></div>
+    <?php wp_nav_menu( array( 
+        'theme_location' => 'header-menu',
+        'menu_class' => 'header-menu' ) ); ?>
 </header>

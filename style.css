@@ -8,3 +8,17 @@ Version: 1.0
 body {
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+header {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header .logo-section {
+    float: left;
+}
+
+header .logo-section img {
+    width: 200px;
+}
