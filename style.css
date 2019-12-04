@@ -78,15 +78,84 @@ header ul.header-menu li a:hover {
     background-color: white;
 }
 
-article.post img{
-    width: 85%;
-    height: auto;
-}
-
 footer {
     width: 100%;
     padding: 20px;
     margin: 0px;
     background-color: black;
     color: white;
+}
+
+/* Original CSS Style */
+* {
+	text-transform: none !important;
+}
+
+.btx-navbar-header {
+	padding-top: 10px;
+}
+
+ul.btx-breadcrumbs{
+	padding-top: 8px;
+}
+
+@media all and (max-width:960px){
+	.btx-navbar-header{
+		padding-top: 0px;
+	}
+	
+	ul.btx-breadcrumbs{
+	  padding-top: 0px;
+  }
+}
+
+.markdown-content p {
+	text-indent: 2em;
+}
+
+.btx-post-headline{
+	padding: 10px;
+}
+
+.btx-post-headline h1{
+	text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.markdown-content img {
+	display: block;
+	margin: 0 auto;
+	border: 3px solid black;
+	width: 85%;
+  height: auto;
+}
+
+.markdown-content blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.markdown-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.markdown-content blockquote p {
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b{
+	font-weight: bold !important;
+}
+
+pre.prettyprint {
+	padding: 10px !important;
 }
