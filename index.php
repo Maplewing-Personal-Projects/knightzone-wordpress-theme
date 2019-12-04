@@ -1,7 +1,6 @@
-<?php
-get_header();
-
+<?php get_header(); ?>
 <div class="container">
+<?php
   if(have_posts()):
     while(have_posts()): the_post(); ?>
       <article class="post">
@@ -13,7 +12,6 @@ get_header();
   else:
     echo '<p>There are no posts!</p>';
   endif;
-</div>
-
-get_footer();
 ?>
+</div>
+<?php get_footer(); ?>
