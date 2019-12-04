@@ -29,13 +29,20 @@ header .logo-section img {
 }
 
 header ul.header-menu {
-    margin: 0px;
-    padding: 0px;
-    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header ul.header-menu li{
-    display: inline-block;
-    vertical-align: middle;
-    height: 100px;
+    display: inline;
+}
+
+header ul.header-menu li a {
+    display: block;
+    padding: 8px;
+}
+
+header ul.header-menu li a:hover {
+    background-color: #001E7C;
 }
