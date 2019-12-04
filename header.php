@@ -26,4 +26,5 @@
             the_custom_logo();
         }
     ?></a></h1>
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 </header>
