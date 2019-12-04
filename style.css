@@ -13,6 +13,20 @@ html, body {
 
 body {
     background: url("images/background.png") repeat-x #001E7C;
+
+    animation-name: movebackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movebackground{
+    from {
+        background-position-x: 0px;
+    }
+
+    to {
+        background-position-x: 50px;
+    }
 }
 
 header {
