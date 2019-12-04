@@ -9,7 +9,7 @@ html, body {
     padding: 0px;
     margin: 0px;
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 150%;
+    line-height: 2em;
 }
 
 body {
