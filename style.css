@@ -4,3 +4,7 @@ Author: Maplewing
 Author URI: https://knightzone.studio/
 Version: 1.0
 */
+
+body {
+    font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
