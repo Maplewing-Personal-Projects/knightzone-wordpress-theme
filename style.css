@@ -36,5 +36,6 @@ header ul.header-menu {
 
 header ul.header-menu li{
     display: inline-block;
+    vertical-align: middle;
     height: 100px;
 }
