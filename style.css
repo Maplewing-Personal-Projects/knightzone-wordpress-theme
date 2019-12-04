@@ -103,6 +103,7 @@ header ul.header-menu li a {
     padding: 5px 7% 5px 7%;
     margin: 200px auto 20px auto;
     background-color: white;
+    background: url("images/content_background_left.png") left repeat-y, url("images/content_background_right.png") right repeat-y;
 }
 
 footer {
