@@ -24,8 +24,8 @@ header .logo-section {
 }
 
 header .logo-section img {
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 header .header-menu {
@@ -34,4 +34,5 @@ header .header-menu {
 
 header .header-menu li{
     display: inline-block;
+    height: 100px;
 }
