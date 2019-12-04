@@ -21,4 +21,5 @@ header .logo-section {
 
 header .logo-section img {
     width: 200px;
+    height: auto;
 }
