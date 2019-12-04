@@ -17,6 +17,10 @@ header {
     padding: 15px 5px 5px 5px;
     border: 1px solid black;
     overflow: auto;
+
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 8px 6px 11px #000000;
 }
 
 header .logo-section {
@@ -43,11 +47,11 @@ header ul.header-menu li{
 header ul.header-menu li a {
     display: block;
     height: 30px;
-    top: calc(50% - 15px);
     padding: 8px;
     text-decoration: none;
+    color: #001E7C;
 }
 
 header ul.header-menu li a:hover {
-    background-color: #001E7C;
+    color: white;
 }
