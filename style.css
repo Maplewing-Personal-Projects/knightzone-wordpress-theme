@@ -26,3 +26,11 @@ header .logo-section img {
     width: 400px;
     height: auto;
 }
+
+header .header-menu {
+    float: right;
+}
+
+header .header-menu li{
+    display: inline-block;
+}
