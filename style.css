@@ -29,6 +29,7 @@ header .logo-section img {
 }
 
 header ul.header-menu {
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,7 +37,7 @@ header ul.header-menu {
 }
 
 header ul.header-menu li{
-    float: right;
+    float: left;
 }
 
 header ul.header-menu li a {
