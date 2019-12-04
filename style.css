@@ -106,6 +106,24 @@ header ul.header-menu li a {
         url("images/content_background_left.png") left repeat-y, 
         url("images/content_background_right.png") right repeat-y,
         white;
+
+    animation-name: movecontentbackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movecontentbackground{
+    0% {
+        background-position-x: 0px, 0px;
+    }
+
+    50% {
+        background-position-x: 50px, -50px;
+    }
+
+    100% {
+        background-position-x: 0px, 0px;
+    }
 }
 
 footer {
