@@ -16,6 +16,7 @@ header {
     margin: -10px auto 0px auto;
     padding: 15px 5px 5px 5px;
     border: 1px solid black;
+    overflow: auto;
 }
 
 header .logo-section {
