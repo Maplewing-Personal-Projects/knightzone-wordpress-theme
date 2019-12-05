@@ -8,8 +8,9 @@
 ?>
 <div class="content-section">
   <div class="thumbnail-section">
-    <div class = "thumbnail-wrapper"
-      style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover; background-position: center center;">
+    <div class="thumbnail-wrapper">
+      <div class="thumbnail-image" style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover; background-position: center center;">
+      </div>
     </div>
   </div>
   <?php

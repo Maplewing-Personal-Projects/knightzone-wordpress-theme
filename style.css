@@ -107,7 +107,7 @@ header ul.header-menu li a {
 
 .thumbnail-section {
     position: relative;
-    width: 1156px;
+    width: 1400px;
     height: 700px;
     margin: 0px auto;
 }
@@ -118,6 +118,14 @@ header ul.header-menu li a {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.thumbnail-section .thumbnail-wrapper .thumbnail-image{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .outer-container{
