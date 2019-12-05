@@ -16,7 +16,7 @@
 <div class="outer-container">
   <div class="container">
   <?php
-    if($have_post)):
+    if($have_post):
   ?>
     <article class="post">
       <h1 class="post-title"><?php the_title() ?></h1>
