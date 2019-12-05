@@ -102,10 +102,19 @@ header ul.header-menu li a {
     width: 1000px;
     padding: 5px 7% 5px 7%;
     margin: 200px auto 20px auto;
-    background: 
-        url("images/content_background_left.png") -10% repeat-y, 
-        url("images/content_background_right.png") 110% repeat-y,
-        white;
+    background: white;
+}
+
+.container::before{
+    width: 100px;
+    height: 100%;
+    background: url("images/content_background_left.png") 0% repeat-y;
+}
+
+.container::after{
+    width: 100px;
+    height: 100%;
+    background: url("images/content_background_right.png") 0% repeat-y;
 }
 
 footer {
