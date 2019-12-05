@@ -12,7 +12,9 @@ html, body {
     line-height: 2em;
 }
 
-body {
+div.background-mask {
+    width: 100%;
+    min-height: 500px;
     background: url("images/background.png") repeat-x #001E7C;
 
     animation-name: movebackground;
