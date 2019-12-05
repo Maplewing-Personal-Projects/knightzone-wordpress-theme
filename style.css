@@ -108,13 +108,13 @@ header ul.header-menu li a {
 .container::before{
     width: 100px;
     height: 100%;
-    background: url("images/content_background_left.png") 0% repeat-y;
+    background: url("images/content_background_left.png") left repeat-y;
 }
 
 .container::after{
     width: 100px;
     height: 100%;
-    background: url("images/content_background_right.png") 0% repeat-y;
+    background: url("images/content_background_right.png") right repeat-y;
 }
 
 footer {
