@@ -18,6 +18,7 @@
 </head>
  
 <body <?php body_class(); ?>>
+<div class="background-mask">
  
 <header class="site-header">
     <div class="logo-section"><a href="<?php echo home_url(); ?>">
