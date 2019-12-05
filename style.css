@@ -15,7 +15,7 @@ html, body {
 div.background-mask {
     width: 100%;
     min-height: 500px;
-    background: url("images/background.png") repeat-x fixed;
+    background: url("images/background.png") repeat-x;
 
     animation-name: movebackground;
     animation-timing-function: linear;
