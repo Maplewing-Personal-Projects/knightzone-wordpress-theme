@@ -108,8 +108,8 @@ header ul.header-menu li a {
 }
 
 .container {
-    width: 1000px;
-    padding: 10px 7% 10px 7%;
+    width: 900px;
+    padding: 10px 5px 10px 5px;
     margin: 0 auto;
     background: white;
 }
