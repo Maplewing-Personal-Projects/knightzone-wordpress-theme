@@ -114,6 +114,7 @@ header ul.header-menu li a {
 
 .outer-container{
     width: 1400px;
+    margin: 0px auto;
     background: 
         url("images/content_background_left.png") left repeat-y,
         url("images/content_background_right.png") right repeat-y,
