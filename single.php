@@ -7,7 +7,7 @@
   if($have_post && has_post_thumbnail()):
 ?>
   <div class="thumbnail-section" 
-    style="background: url('<?php the_post_thumbnail_url ?>') fixed; background-size: cover">
+    style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover">
   </div>
 <?php
   endif;
