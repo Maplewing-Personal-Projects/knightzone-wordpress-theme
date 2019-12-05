@@ -99,12 +99,12 @@ header ul.header-menu li a {
 }
 
 .container {
-    width: 1200px;
+    width: 1000px;
     padding: 5px 7% 5px 7%;
     margin: 200px auto 20px auto;
     background: 
-        url("images/content_background_left.png") left repeat-y, 
-        url("images/content_background_right.png") right repeat-y,
+        url("images/content_background_left.png") -10% repeat-y, 
+        url("images/content_background_right.png") 110% repeat-y,
         white;
 }
 
