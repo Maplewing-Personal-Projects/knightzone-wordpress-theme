@@ -10,8 +10,6 @@
         </article>
     <?php 
       endwhile;
-    else:
-      echo '<p>There are no posts!</p>';
     endif;
   ?>
   </div>

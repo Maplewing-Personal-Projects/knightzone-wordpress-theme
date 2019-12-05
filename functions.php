@@ -25,6 +25,7 @@ function themename_custom_logo_setup() {
 }
 
 add_theme_support( 'custom-background' );
+add_theme_support( 'post-thumbnails' );
 
 add_action( 'init', 'register_my_menus' );
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
