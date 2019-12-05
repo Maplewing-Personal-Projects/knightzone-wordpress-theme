@@ -7,8 +7,10 @@
   if($have_post && has_post_thumbnail()):
 ?>
 <div class="content-section">
-  <div class="thumbnail-section" 
-    style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover">
+  <div class="thumbnail-section">
+    <div class = "thumbnail-wrapper"
+      style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover; background-position: center center;">
+    </div>
   </div>
   <?php
     endif;
