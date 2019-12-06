@@ -107,12 +107,12 @@ header ul.header-menu li a {
 
 .outer-container{
     width: 1200px;
+    padding: 10px 45px 50px 45px;
     margin: 150px auto 50px auto;
 }
 
 .container {
     width: 100%;
-    padding: 10px 45px 50px 45px;
     margin: 0 auto;
     background: white;
 }
