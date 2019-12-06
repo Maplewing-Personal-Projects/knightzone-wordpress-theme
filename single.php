@@ -8,7 +8,7 @@
   <?php
     if($have_post && has_post_thumbnail()):
   ?>
-    <div class="thumbnail-section" style="background: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center center;">
+    <div class="thumbnail-section" style="background: url('<?php the_post_thumbnail_url(); ?>') white; background-size: cover; background-position: center center;">
     </div>
     <?php
       endif;
