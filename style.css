@@ -127,10 +127,9 @@ header ul.header-menu li a {
     position: relative;
     width: 100%;
     min-height: 150px;
-    margin: 0 auto;
+    margin: -30px auto 0 auto;
     padding: 2em 1em;
     border-radius: 10px 10px 0 0;
-    text-align: center;
     color: #FFF;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 -70px 70px rgba(0,0,0,0.2) inset;
@@ -154,7 +153,6 @@ footer {
 }
 
 h1.post-title{
-    letter-spacing: -.01em;
 	text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
