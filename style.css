@@ -125,6 +125,7 @@ header ul.header-menu li a {
 
 .post-header{
     position: relative;
+    width: 100%;
     min-height: 150px;
     margin: 0 auto;
     padding: 2em 1em;
