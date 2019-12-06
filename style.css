@@ -109,12 +109,12 @@ header ul.header-menu li a {
     width: 1200px;
     padding: 10px 45px 50px 45px;
     margin: 150px auto 50px auto;
+    background: white;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    background: white;
 }
 
 .thumbnail-section {
@@ -125,7 +125,6 @@ header ul.header-menu li a {
 
 .post-header{
     position: relative;
-    width: 100%;
     min-height: 150px;
     margin: -30px auto 0 auto;
     padding: 2em 1em;
