@@ -5,22 +5,24 @@
 ?>
 
 <div class="outer-container">
-  <?php
-    if($have_post && has_post_thumbnail()):
-  ?>
-    <div class="thumbnail-section" style="background: url('<?php the_post_thumbnail_url(); ?>') white; background-size: cover; background-position: center center;">
-    </div>
+  <div class="container">
+    <?php
+      if($have_post && has_post_thumbnail()):
+    ?>
+        <div class="thumbnail-section" style="background: url('<?php the_post_thumbnail_url(); ?>') white; background-size: cover; background-position: center center;">
+        </div>
     <?php
       endif;
     ?>
-    <div class="container">
     <?php
       if($have_post):
     ?>
-      <article class="post">
-        <h1 class="post-title"><?php the_title() ?></h1>
-        <?php the_content() ?>
-      </article>
+        <div class="post-header">
+          <h1 class="post-title"><?php the_title() ?></h1>
+        </div>
+        <article class="post">
+          <?php the_content() ?>
+        </article>
     <?php 
       endif;
     ?>
