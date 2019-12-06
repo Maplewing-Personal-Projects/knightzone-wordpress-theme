@@ -102,8 +102,9 @@ header ul.header-menu li a {
 
 .thumbnail-section {
     width: 100%;
-    height: 700px;
+    padding: 0px 45px;
     margin: 0px auto;
+    height: 700px;
 }
 
 .outer-container{
