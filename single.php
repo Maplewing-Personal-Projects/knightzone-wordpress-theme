@@ -3,21 +3,19 @@
   $have_post = have_posts();
   if($have_post) the_post();
 ?>
-<?php
-  if($have_post && has_post_thumbnail()):
-?>
-<div class="content-section">
-  <div class="thumbnail-section">
-    <div class="thumbnail-wrapper">
-      <div class="thumbnail-image" style="background: url('<?php the_post_thumbnail_url(); ?>') fixed; background-size: cover; background-position: center center;">
-      </div>
-    </div>
-  </div>
-  <?php
-    endif;
-  ?>
 
-  <div class="outer-container">
+<div class="outer-container">
+  <?php
+    if($have_post && has_post_thumbnail()):
+  ?>
+    <div class="thumbnail-section">
+      <div class="thumbnail-wrapper">
+        <div class="thumbnail-image" style="background: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center center;">
+        </div>
+      </div>
+    <?php
+      endif;
+    ?>
     <div class="container">
     <?php
       if($have_post):
