@@ -150,10 +150,12 @@ header ul.header-menu li a {
     padding: 0px;
     margin: 0 auto;
     background: rgba(0,0,0, 0.7);
+    font-size: 18px;
     color: #bbb;
 }
 
 .breadcrumb a{
+    font-size: 18px;
     color: #bbb;
 }
 

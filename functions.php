@@ -38,7 +38,6 @@ function the_breadcrumb(){
 	}
 
 	if(is_single()){
-		echo $seperator;
 		the_title();
 	}
 }
