@@ -132,10 +132,10 @@ header ul.header-menu li a {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 2em 1em;
 }
 
 h1.post-title{
+    padding: 2em 1em;
 	text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
