@@ -26,7 +26,6 @@ function themename_custom_logo_setup() {
 
 function the_breadcrumb(){
 	$seperator = " > ";
-	echo '<div class="breadcrumb">';
 	echo '<a href="';
 	echo get_option('home');
 	echo '">';
