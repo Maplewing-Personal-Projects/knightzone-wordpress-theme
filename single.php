@@ -18,7 +18,7 @@
                   <?php the_category(", "); ?> <?php if(has_tag()): ?> | <?php the_tags("", ", "); endif; ?>
                 </div>
                 <div class="author-section">
-                  <?php echo get_avatar(get_the_author_email(), "40"); ?><?php the_author(); ?> 
+                  <?php echo get_avatar(get_the_author_email(), "40"); ?><?php the_author(); ?> | <?php the_date('Y-m-j'); ?> <?php the_time('G:i:s'); ?></p>
                 </div>
               </div>
             </div>
