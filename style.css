@@ -154,6 +154,11 @@ h1.post-title{
     color: #bbb;
 }
 
+.author-section, .author-section a{
+    font-size: 20px;
+    color: white;
+}
+
 .post {
     padding: 10px 45px 50px 45px;
 }

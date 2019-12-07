@@ -17,6 +17,9 @@
                 <div class="category-section">
                   <?php the_category(", "); ?> <?php if(has_tag()): ?> | <?php the_tags("", ", "); endif; ?>
                 </div>
+                <div class="author-section">
+                  <?php echo get_avatar(get_the_author_email(), "60"); ?> <?php the_author(); ?> 
+                </div>
               </div>
             </div>
         </div>
