@@ -175,14 +175,15 @@ h1.post-title{
 }
 
 .header-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-right: 15px;
 }
 
 .header-item .fas{
-    display: inline-block;
-    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
 }
 
 .post {
