@@ -147,14 +147,18 @@ header ul.header-menu li a {
     position: absolute;
     top: 0;
     width: 100%;
+    padding: 0px;
     margin: 0 auto;
-    padding: 5px;
     background: rgba(0,0,0, 0.7);
     color: #bbb;
 }
 
 .breadcrumb a{
     color: #bbb;
+}
+
+.breadcrumb-inner{
+    padding: 10px;
 }
 
 h1.post-title{
