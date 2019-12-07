@@ -154,7 +154,7 @@ h1.post-title{
 
 .category-section, .category-section a{
     font-size: 20px;
-    color: white;
+    color: #bbb;
 }
 
 .author-section{
@@ -162,12 +162,12 @@ h1.post-title{
     align-items: center;
     margin-top: 15px;
     font-size: 20px;
-    color: white;
+    color: #bbb;
 }
 
 .author-section a{
     font-size: 20px;
-    color: white;
+    color: #bbb;
 }
 
 .author-section img {
