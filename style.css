@@ -176,6 +176,16 @@ h1.post-title{
     margin-right: 10px;
 }
 
+.header-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.header-item .fas{
+    display: inline-block;
+    margin-right: 8px;
+}
+
 .post {
     padding: 10px 45px 50px 45px;
 }

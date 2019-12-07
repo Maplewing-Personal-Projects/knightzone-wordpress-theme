@@ -15,10 +15,22 @@
               <div class="title-section">
                 <h1 class="post-title"><?php the_title() ?></h1>
                 <div class="category-section">
-                  <i class="fas fa-folder-open"></i><?php the_category(", "); ?> <?php if(has_tag()): ?> <i class="fas fa-tags"></i> <?php the_tags("", ", "); endif; ?>
+                  <div class="header-item">
+                    <i class="fas fa-folder-open"></i> <?php the_category(", "); ?>
+                  </div>
+                  <?php if(has_tag()): ?> 
+                    <div class="header-item">
+                      <i class="fas fa-tags"></i> <?php the_tags("", ", "); ?>
+                    </div>
+                  <?php endif; ?>
                 </div>
                 <div class="author-section">
-                  <i class="fas fa-user"></i><?php echo get_avatar(get_the_author_email(), "40"); ?><?php the_author(); ?> <i class="fas fa-clock"></i> <?php the_date('Y-m-d'); ?> <?php the_time('H:i:s'); ?></p>
+                  <div class="header-item">
+                    <i class="fas fa-user"></i> <?php echo get_avatar(get_the_author_email(), "40"); ?><?php the_author(); ?>
+                  </div>
+                  <div class="header-item">
+                    <i class="fas fa-clock"></i> <?php the_date('Y-m-d'); ?> <?php the_time('H:i:s'); ?></p>
+                  </div>
                 </div>
               </div>
             </div>
