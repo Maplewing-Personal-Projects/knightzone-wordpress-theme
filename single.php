@@ -7,9 +7,12 @@
 <div class="outer-container">
   <div class="container">
     <?php
-      if($have_post && has_post_thumbnail()):
+      if($have_post):
     ?>
-        <div class="thumbnail-section" style="background: url('<?php the_post_thumbnail_url(); ?>') white; background-size: cover; background-position: center center;">
+        <div class="thumbnail-section" style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?> white; background-size: cover; background-position: center center;">
+          <div class="post-header">
+            <h1 class="post-title"><?php the_title() ?></h1>
+          </div>
         </div>
     <?php
       endif;
@@ -17,9 +20,6 @@
     <?php
       if($have_post):
     ?>
-        <div class="post-header">
-          <h1 class="post-title"><?php the_title() ?></h1>
-        </div>
         <article class="post">
           <?php the_content() ?>
         </article>
