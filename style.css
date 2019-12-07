@@ -138,8 +138,8 @@ header ul.header-menu li a {
 .title-section{
     position: absolute;
     bottom: 0;
-    margin-left: 10px;
-    padding: 20px 40px;
+    margin: 10px 25px;
+    padding: 10px 25px;
     border-left: 5px solid #42f5da;
 }
 
