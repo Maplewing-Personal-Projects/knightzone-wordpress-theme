@@ -13,12 +13,7 @@
           style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?>; background-size: cover; background-position: center center;">
             <div class="header-inner">
               <div class="breadcrumb">
-                <?php 
-                  $categories = get_the_category();
-                  if(!empty(categories)){
-                    echo get_category_parents($categories[0]->term_id, true, ">");
-                  }
-                ?>
+                <?php the_breadcrumb(); ?>
               </div>
               <div class="title-section">
                 <h1 class="post-title"><?php the_title() ?></h1>

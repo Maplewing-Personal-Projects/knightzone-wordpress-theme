@@ -24,6 +24,13 @@ function themename_custom_logo_setup() {
 	add_theme_support( 'custom-logo', $defaults );
 }
 
+function the_breadcrumb(){
+	$categories = get_the_category();
+	if(!empty(categories)){
+	  echo get_category_parents($categories[0]->term_id, true, " > ");
+	}
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 
