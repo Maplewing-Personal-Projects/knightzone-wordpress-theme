@@ -30,4 +30,6 @@ add_theme_support( 'post-thumbnails' );
 add_action( 'init', 'register_my_menus' );
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts/parallax.js-1.5.0/parallax.min.js', array ( 'jquery' ), 1.11, false);
 ?>
