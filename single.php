@@ -51,6 +51,10 @@
         </article>
     <?php 
       endif;
+
+      if ( comments_open() || get_comments_number() ) :
+        comments_template();
+      endif;
     ?>
     </div>
   </div>
