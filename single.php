@@ -10,8 +10,10 @@
       if($have_post):
     ?>
         <div class="post-header" 
-          style="background:  rgba(0, 0, 0, 0.6), <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?>; background-size: cover; background-position: center center;">
-            <h1 class="post-title"><?php the_title() ?></h1>
+          style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?>; background-size: cover; background-position: center center;">
+            <div class="header-inner">
+              <h1 class="post-title"><?php the_title() ?></h1>
+            </div>
         </div>
     <?php
       endif;
