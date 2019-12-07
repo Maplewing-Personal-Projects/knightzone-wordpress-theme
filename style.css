@@ -143,6 +143,14 @@ header ul.header-menu li a {
     border-left: 10px solid #42f5da;
 }
 
+.breadcrumb {
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    background: rgba(0,0,0, 0.7);
+    color: #bbb;
+}
+
 h1.post-title{
     color: #fff;
 	text-shadow:
