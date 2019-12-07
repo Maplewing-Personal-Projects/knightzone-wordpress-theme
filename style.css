@@ -127,7 +127,8 @@ header ul.header-menu li a {
 
 .header-inner{
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0, 0.6);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 70%, rgba(255,255,255,0) 100%);
     top: 0;
     left: 0;
     width: 100%;
