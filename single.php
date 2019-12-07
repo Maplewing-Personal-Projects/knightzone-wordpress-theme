@@ -9,7 +9,8 @@
     <?php
       if($have_post):
     ?>
-        <div class="post-header parallax-window" data-parallax="scroll" data-image-src="<?php if(has_post_thumbnail()): the_post_thumbnail_url(); endif; ?>">
+        <div class="post-header" 
+          style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?>; background-size: cover; background-position: center center;">
             <div class="header-inner">
               <div class="title-section">
                 <h1 class="post-title"><?php the_title() ?></h1>
