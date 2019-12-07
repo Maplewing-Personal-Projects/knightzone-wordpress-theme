@@ -159,6 +159,10 @@ h1.post-title{
     color: white;
 }
 
+.author-section img {
+    border-radius: 50%;
+}
+
 .post {
     padding: 10px 45px 50px 45px;
 }
