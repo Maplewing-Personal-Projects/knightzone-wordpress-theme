@@ -25,9 +25,22 @@ function themename_custom_logo_setup() {
 }
 
 function the_breadcrumb(){
+	$seperator = " > ";
+	echo '<div class="breadcrumb">';
+	echo '<a href="';
+	echo get_option('home');
+	echo '">';
+	echo "<i class='fas fa-home'></i>";
+	echo '</a>' . $seperator;
+
 	$categories = get_the_category();
 	if(!empty(categories)){
-	  echo get_category_parents($categories[0]->term_id, true, " > ");
+	  echo get_category_parents($categories[0]->term_id, true, $seperator);
+	}
+
+	if(is_single()){
+		echo $seperator;
+		the_title();
 	}
 }
 
