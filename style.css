@@ -149,6 +149,11 @@ h1.post-title{
      1px 1px 0 #000;
 }
 
+.category-section, .category-section a{
+    font-size: small;
+    color: #bbb;
+}
+
 .post {
     padding: 10px 45px 50px 45px;
 }

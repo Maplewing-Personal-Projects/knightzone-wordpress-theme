@@ -14,6 +14,9 @@
             <div class="header-inner">
               <div class="title-section">
                 <h1 class="post-title"><?php the_title() ?></h1>
+                <div class="category-section">
+                  <?php the_category(", "); ?> | <?php the_tags(", "); ?>
+                </div>
               </div>
             </div>
         </div>
