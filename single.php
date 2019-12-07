@@ -21,11 +21,11 @@
                 <h1 class="post-title"><?php the_title() ?></h1>
                 <div class="category-section">
                   <span class="header-item">
-                    <i class="fas fa-folder-open"></i> <?php the_category(", "); ?>
+                    <i class="fas fa-folder-open"></i> <?php the_category(",&nbsp;"); ?>
                   </span>
                   <?php if(has_tag()): ?> 
                     <span class="header-item">
-                      <i class="fas fa-tags"></i> <?php the_tags("", ", "); ?>
+                      <i class="fas fa-tags"></i> <?php the_tags("", ",&nbsp;"); ?>
                     </span>
                   <?php endif; ?>
                 </div>
