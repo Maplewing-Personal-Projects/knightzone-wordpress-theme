@@ -144,11 +144,12 @@ header ul.header-menu li a {
 }
 
 h1.post-title{
+    color: #fff;
 	text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
 }
 
 .category-section, .category-section a{
