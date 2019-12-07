@@ -5,6 +5,7 @@
 ?>
 
 <div class="outer-container">
+  <img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me"/>
   <div class="container">
     <?php
       if($have_post):
