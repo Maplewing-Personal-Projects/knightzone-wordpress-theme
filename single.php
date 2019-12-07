@@ -15,7 +15,7 @@
               <div class="title-section">
                 <h1 class="post-title"><?php the_title() ?></h1>
                 <div class="category-section">
-                  <?php the_category(", "); ?> | <?php the_tags(", "); ?>
+                  <?php the_category(", "); ?> <?php if(has_tag()): ?> | <?php the_tags("", ", "); endif; ?>
                 </div>
               </div>
             </div>
