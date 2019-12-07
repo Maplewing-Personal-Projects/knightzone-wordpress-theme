@@ -150,17 +150,17 @@ header ul.header-menu li a {
     padding: 0px;
     margin: 0 auto;
     background: rgba(0,0,0, 0.7);
-    font-size: 18px;
+    font-size: 14px;
     color: #bbb;
 }
 
 .breadcrumb a{
-    font-size: 18px;
+    font-size: 14px;
     color: #bbb;
 }
 
 .breadcrumb-inner{
-    padding: 18px 10px;
+    padding: 18px 5px;
 }
 
 h1.post-title{
