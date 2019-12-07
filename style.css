@@ -136,8 +136,8 @@ header ul.header-menu li a {
 
 .title-section{
     position: absolute;
-    bottom: 20px;
-    padding: 2em 1em;
+    bottom: 0;
+    padding: 30px 20px;
 }
 
 h1.post-title{
