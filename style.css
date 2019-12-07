@@ -206,7 +206,7 @@ h1.post-title{
     margin-right: 12px;
 }
 
-.post {
+.post, .comment-area {
     padding: 10px 45px 50px 45px;
 }
 
