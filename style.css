@@ -73,14 +73,13 @@ a:hover, a:active{
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1200px;
     margin: 0px auto;
     padding-top: 20px;
     overflow: auto;
-}
-
-header .logo-section {
-    float: left;
 }
 
 header .logo-section img {
@@ -89,7 +88,6 @@ header .logo-section img {
 }
 
 header .nav-section {
-    float: right;
     margin: 0;
     padding: 0;
     overflow: hidden;
