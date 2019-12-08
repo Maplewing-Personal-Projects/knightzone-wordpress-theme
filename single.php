@@ -10,7 +10,7 @@
     <?php
       if($have_post):
     ?>
-        <div class="post-header" 
+        <div class="content-header post-header" 
           style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?>; background-size: cover; background-position: center center;">
             <div class="header-inner">
               <div class="breadcrumb">

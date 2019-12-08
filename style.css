@@ -179,24 +179,21 @@ header ul.header-menu li a {
     margin: 0 auto;
 }
 
-.post-header{
+.content-header{
     position: relative;
     width: 100%;
     min-height: 700px;
     margin: 0px auto 20px auto;
 }
 
-.page-header{
-    position: relative;
-    width: 100%;
+.content-header.default-background-header {
     min-height: 400px;
-    margin: 0px auto 20px auto;
     background: url("images/page_background.png");
     background-size: cover; 
     background-position: center 34%;
 }
 
-.archive-header{
+.search-header{
     position: relative;
     width: 100%;
     min-height: 400px;
@@ -233,6 +230,10 @@ header ul.header-menu li a {
 
 .archive-header .title-section{
     border-left: 10px solid #9642f5;
+}
+
+.search-header .title-section{
+    border-left: 10px solid #4263f5;
 }
 
 .breadcrumb {

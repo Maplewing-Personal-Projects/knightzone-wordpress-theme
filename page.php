@@ -10,7 +10,7 @@
     <?php
       if($have_post):
     ?>
-        <div class="page-header">
+        <div class="content-header default-background-header page-header">
             <div class="header-inner">
               <div class="breadcrumb">
                 <div class="breadcrumb-inner">

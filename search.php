@@ -3,7 +3,7 @@
 <div class="outer-container">
   <img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me"/>
   <div class="container">
-    <div class="content-header default-background-header archive-header">
+    <div class="content-header search-header">
         <div class="header-inner">
             <div class="breadcrumb">
                 <div class="breadcrumb-inner">
