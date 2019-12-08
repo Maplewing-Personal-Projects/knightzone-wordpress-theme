@@ -115,7 +115,9 @@ function fb_home_image( $tags ) {
         unset( $tags['og:image'] );
 
         $fb_home_img = get_template_directory_uri() . '/images/page_background.png';
-        $tags['og:image'] = esc_url( $fb_home_img );
+		$tags['og:image'] = esc_url( $fb_home_img );
+		$tags['og:image:width'] = "1265";
+		$tags['og:image:height'] = "729";
     }
     return $tags;
 }
