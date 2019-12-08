@@ -75,6 +75,7 @@ a:hover, a:active{
 header {
     display: flex;
     justify-content: space-between;
+    position: relative;
     width: 1200px;
     margin: 0px auto;
     padding-top: 20px;
@@ -100,7 +101,9 @@ header .nav-button {
 
 header .nav-button button{
     border: 0px;
-    padding: 40px;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    font-size: 30px;
     background: #001E7C;
     color: white;
 }
@@ -433,6 +436,16 @@ nav .extra-menu li a:active{
 
     header .nav-section{
         display: none;
+    }
+
+    header .nav-section.open {
+        position: absolute;
+        top: 50px;
+        display: flex;
+    }
+
+    header .nav-section.open ul.header-menu {
+        flex-flow: column;
     }
 
     header .nav-button{

@@ -27,7 +27,7 @@
             the_custom_logo();
         }
     ?></a></div>
-    <div class="nav-section">
+    <div class="nav-section" id="nav-section">
         <?php wp_nav_menu( array( 
             'theme_location' => 'header-menu',
             'menu_class' => 'header-menu' ) ); ?>
@@ -36,6 +36,6 @@
         </div>
     </div>
     <div class="nav-button">
-        <button><i class="fas fa-bars"></i></button>        
+        <button id="nav-open-button"><i class="fas fa-bars"></i></button>        
     </div>
 </header>
