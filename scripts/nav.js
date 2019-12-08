@@ -14,17 +14,19 @@ function scrollToTop(scrollDuration) {
     window.requestAnimationFrame(step);
 }
 
+function displayGoToTopButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTopButton.style.display = "block";
+    } else {
+        goToTopButton.style.display = "none";
+    }
+}
+
 window.addEventListener("load", function(){
     var openClassName = "open";
     var goToTopButton = document.getElementById("go_to_top_button");
 
-    window.addEventListener("scroll", function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            goToTopButton.style.display = "block";
-        } else {
-            goToTopButton.style.display = "none";
-        }
-    });
+    window.addEventListener("scroll", displayGoToTopButton);
 
     document.querySelector("#nav-open-button").addEventListener("click", function(){
         var navSection = document.querySelector("#nav-section");
@@ -37,4 +39,6 @@ window.addEventListener("load", function(){
     goToTopButton.addEventListener("click", function(){
         scrollToTop(1);
     })
+
+    displayGoToTopButton();
 });
