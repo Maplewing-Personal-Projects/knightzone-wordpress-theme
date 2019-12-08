@@ -140,11 +140,11 @@ header ul.header-menu li a {
 .page-header{
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 600px;
     margin: 0px auto 20px auto;
     background: url("images/page_background.png");
     background-size: cover; 
-    background-position: center center;
+    background-position: center 34%;
 }
 
 .header-inner{
@@ -162,7 +162,14 @@ header ul.header-menu li a {
     bottom: 0;
     margin: 5px 25px 15px 25px;
     padding: 5px 25px 15px 25px;
+}
+
+.post-header .title-section{
     border-left: 10px solid #42f5da;
+}
+
+.page-header .title-section{
+    border-left: 10px solid #f55d42;
 }
 
 .breadcrumb {
