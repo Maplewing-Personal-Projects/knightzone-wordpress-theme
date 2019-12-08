@@ -84,6 +84,7 @@ function wpdocs_after_setup_theme() {
 
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-header' );
 
 add_action( 'init', 'register_my_menus' );
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
