@@ -215,18 +215,28 @@ header ul.header-menu li a {
 .home-header img.theme-logo{
     width: 85%;
     height: auto;
-    animation: playlogo 0.3s ease-out;
+    animation: playlogo 0.3s ease-out 0s infinite;
 }
 
 @keyframes playlogo{
-    from {
+    0% {
         opacity: 0;
         transform: translateY(-20px);
     }
 
-    to {
+    20% {
         opacity: 1;
         transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 }
 
