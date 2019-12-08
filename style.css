@@ -387,7 +387,7 @@ li.post-item a.post-item-inner .post-item-title{
 }
 
 footer {
-    display: absolute;
+    position: absolute;
     bottom: -40px;
     width: 100%;
     padding: 0px;
