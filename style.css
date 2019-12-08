@@ -325,7 +325,18 @@ footer {
 }
 
 footer .footer-container{
+    display: flex;
+    justify-content: space-between;
     width: 1200px;
+}
+
+nav .extra-menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .extra-menu li a{
+    font-size: 20px;
 }
 
 .pagination-section{
@@ -353,14 +364,6 @@ footer .footer-container{
 .pagination-section nav .page-numbers.current {
     background: #001E7C;
     color: white;
-}
-
-.left{
-    float: left;
-}
-
-.right{
-    float: right;
 }
 
 @media screen and (max-width: 1200px) {
