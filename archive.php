@@ -24,6 +24,7 @@
             while(have_posts()): the_post();
         ?>
             <li class="post-item">
+                <a class="post-item-inner" href="<?php the_permalink(); ?>">
                 <div class="post-item-thumbnail" 
                     style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?> #999; background-size: cover; background-position: center center;">
                 </div>
@@ -39,9 +40,10 @@
                         <?php endif; ?>
                     </div>
                     <div class="post-item-title">
-                        <a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+                       <?php the_title() ?>
                     </div>
                 </div>
+                </a>
             </li>
         <?php
             endwhile;
