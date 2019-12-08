@@ -450,6 +450,12 @@ nav .extra-menu li a:active{
 
     header .nav-section.open ul.header-menu {
         flex-flow: column;
+        align-items: stretch;
+        padding: 0px;
+    }
+
+    header .nav-section.open ul.header-menu li {
+        width: 100%;
     }
 
     header .nav-section.open ul.header-menu a {
@@ -458,11 +464,19 @@ nav .extra-menu li a:active{
         padding-bottom: 10px;
         background: white;
         color: #001E7C;
+        display: block;
+        text-align: center;
     }
 
     header .nav-section.open ul.header-menu a:hover{
         background: #001E7C;
         color: white;
+    }
+
+    header .nav-section.open .search-form-wrapper{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     header .nav-section.open form.search-form{
