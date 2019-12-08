@@ -135,7 +135,7 @@ header .nav-section form.search-form input.search-submit {
     color: white;
 }
 
-header .nav-section form.search-form input.search-submit:hover
+header .nav-section form.search-form input.search-submit:hover,
 header .nav-section form.search-form input.search-submit:active{
     background: white;
     color: #001E7C;
