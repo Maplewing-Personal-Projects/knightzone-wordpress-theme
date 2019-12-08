@@ -28,9 +28,11 @@
         }
     ?></a></div>
     <div class="nav-section">
-    <?php wp_nav_menu( array( 
-        'theme_location' => 'header-menu',
-        'menu_class' => 'header-menu' ) ); ?>
-    <?php get_search_form(); ?>
+        <?php wp_nav_menu( array( 
+            'theme_location' => 'header-menu',
+            'menu_class' => 'header-menu' ) ); ?>
+        <div class="search_form_wrapper">
+            <?php get_search_form(); ?>
+        </div>
     </div>
 </header>
