@@ -27,18 +27,20 @@
                 <div class="post-item-thumbnail" 
                     style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?> #999; background-size: cover; background-position: center center;">
                 </div>
-                <div class="post-item-category">
-                    <span class="header-item">
-                        <i class="fas fa-folder-open"></i> <?php the_category(",&nbsp;"); ?>
-                    </span>
-                    <?php if(has_tag()): ?> 
+                <div class="post-item-meta">
+                    <div class="post-item-category">
                         <span class="header-item">
-                            <i class="fas fa-tags"></i> <?php the_tags("", ",&nbsp;"); ?>
+                            <i class="fas fa-folder-open"></i> <?php the_category(",&nbsp;"); ?>
                         </span>
-                    <?php endif; ?>
-                </div>
-                <div class="post-item-title">
-                    <a href="<?php the_permalink(); ?>"><h1><?php the_title() ?></h1></a>
+                        <?php if(has_tag()): ?> 
+                            <span class="header-item">
+                                <i class="fas fa-tags"></i> <?php the_tags("", ",&nbsp;"); ?>
+                            </span>
+                        <?php endif; ?>
+                    </div>
+                    <div class="post-item-title">
+                        <a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+                    </div>
                 </div>
             </li>
         <?php
