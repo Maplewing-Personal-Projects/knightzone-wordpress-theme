@@ -30,7 +30,12 @@ function the_breadcrumb(){
 	echo get_option('home');
 	echo '">';
 	echo "<i class='fas fa-home'></i>";
-	echo '</a>' . $seperator;
+	echo '</a>';
+	
+	if(is_home())
+		return;
+	
+	echo $seperator;
 
 	if(is_single()){
 		$categories = get_the_category();
