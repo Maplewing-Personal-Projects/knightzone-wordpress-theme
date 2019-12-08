@@ -1,3 +1,6 @@
+var openClassName = "open";
+var goToTopButton = document.getElementById("go_to_top_button");
+
 /* Code from https://stackoverflow.com/questions/21474678/scrolltop-animation-without-jquery */
 function scrollToTop(scrollDuration) {
     var cosParameter = window.scrollY / 2,
@@ -14,31 +17,22 @@ function scrollToTop(scrollDuration) {
     window.requestAnimationFrame(step);
 }
 
-function displayGoToTopButton() {
+window.addEventListener("scroll", function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         goToTopButton.style.display = "block";
     } else {
         goToTopButton.style.display = "none";
     }
-}
-
-window.addEventListener("load", function(){
-    var openClassName = "open";
-    var goToTopButton = document.getElementById("go_to_top_button");
-
-    window.addEventListener("scroll", displayGoToTopButton);
-
-    document.querySelector("#nav-open-button").addEventListener("click", function(){
-        var navSection = document.querySelector("#nav-section");
-        if (navSection.classList.contains(openClassName))
-            navSection.classList.remove(openClassName);
-        else
-            navSection.classList.add(openClassName);
-    });
-
-    goToTopButton.addEventListener("click", function(){
-        scrollToTop(1);
-    })
-
-    displayGoToTopButton();
 });
+
+document.querySelector("#nav-open-button").addEventListener("click", function(){
+    var navSection = document.querySelector("#nav-section");
+    if (navSection.classList.contains(openClassName))
+        navSection.classList.remove(openClassName);
+    else
+        navSection.classList.add(openClassName);
+});
+
+goToTopButton.addEventListener("click", function(){
+    scrollToTop(1);
+})
