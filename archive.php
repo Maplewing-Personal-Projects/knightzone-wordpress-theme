@@ -31,11 +31,11 @@
                 <div class="post-item-meta">
                     <div class="post-item-category">
                         <span class="header-item">
-                            <i class="fas fa-folder-open"></i> <?php the_category(",&nbsp;"); ?>
+                            <i class="fas fa-folder-open"></i> <?php the_category_without_link(",&nbsp;"); ?>
                         </span>
                         <?php if(has_tag()): ?> 
                             <span class="header-item">
-                                <i class="fas fa-tags"></i> <?php the_tags("", ",&nbsp;"); ?>
+                                <i class="fas fa-tags"></i> <?php the_tags_without_link("", ",&nbsp;"); ?>
                             </span>
                         <?php endif; ?>
                     </div>

@@ -47,6 +47,22 @@ function the_breadcrumb(){
 	}
 }
 
+function the_category_without_link($seperator){
+	$is_output = false;
+	foreach(get_the_category() as $category){
+		if($is_output) echo $seperator;
+		echo $category;
+	}
+}
+
+function the_tags_without_link($seperator){
+	$is_output = false;
+	foreach(get_the_tag() as $category){
+		if($is_output) echo $seperator;
+		echo $category;
+	}
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 
