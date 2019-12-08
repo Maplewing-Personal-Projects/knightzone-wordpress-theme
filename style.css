@@ -256,13 +256,14 @@ h1.post-title{
 ul.post-item-list {
     list-style: none;
     width: 85%;
-    min-height: 200px;
 }
 
 li.post-item {
     display: inline-flex;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
+    width: 100%;
+    min-height: 200px;
 }
 
 li.post-item .post-item-thumbnail {
