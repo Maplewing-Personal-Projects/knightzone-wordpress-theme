@@ -53,7 +53,12 @@
         ?>
             </ul>
         <?php
-        the_posts_pagination();
+        the_posts_pagination(array(
+            'end_size' => 5,
+            'mid_size' => 5,
+            'prev_text' => '<',
+            'next_text' => '>',
+        ));
         endif;
         ?>
     </article>
