@@ -50,14 +50,6 @@
         endif;
         ?>
     </article>
-    <section class="comment-area">
-    <?php
-      if ( comments_open() || get_comments_number() ) :
-        comments_template();
-      endif;
-    ?>
-      </section>
-    </div>
   </div>
 </div>
 <?php get_footer(); ?>
