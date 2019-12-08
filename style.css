@@ -95,6 +95,35 @@ header .nav-section {
     overflow: hidden;
 }
 
+header .nav-section form.search-form {
+    float: right;
+}
+
+header .nav-section form.search-form input.search-field {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+header .nav-section form.search-form input.search-submit {
+    border: 0px;
+    border-radius: 10px;
+
+    width: 50px;
+    height: 30px;
+
+    margin: 0px 10px;
+    background: #001E7C;
+    color: white;
+}
+
+header .nav-section form.search-form input.search-submit:hover
+header .nav-section form.search-form input.search-submit:active{
+    background: white;
+    color: #001E7C;
+}
+
 header ul.header-menu {
     list-style-type: none;
 }
