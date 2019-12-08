@@ -5,13 +5,26 @@ Author URI: https://knightzone.studio/
 Version: 1.0
 */
 
-html, body {
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
     padding: 0px;
     margin: 0px;
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
     line-height: 1.8;
     height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .go-to-top-button {
@@ -409,7 +422,10 @@ li.post-item a.post-item-inner .post-item-title{
 }
 
 footer {
-    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     padding: 0px;
     margin: 0px;
     background-color: black;
