@@ -260,6 +260,7 @@ ul.post-item-list {
 
 li.post-item {
     display: inline-flex;
+    align-items: stretch;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
     width: 100%;
@@ -268,7 +269,6 @@ li.post-item {
 
 li.post-item .post-item-thumbnail {
     width: 15%;
-    height: 100%;
 }
 
 li.post-item .post-item-category,
