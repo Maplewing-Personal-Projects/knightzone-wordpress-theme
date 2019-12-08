@@ -6,8 +6,6 @@ Version: 1.0
 */
 
 html, body {
-    display: flex;
-    flex-direction: column;
     padding: 0px;
     margin: 0px;
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -159,6 +157,7 @@ header ul.header-menu li a {
 .outer-container{
     position: relative;
     width: 1200px;
+    min-height: 100%;
     padding: 0px;
     margin: 200px auto 50px auto;
     background: white;
@@ -392,7 +391,6 @@ footer {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    margin-top: auto;
     background-color: black;
     color: white;
 }
