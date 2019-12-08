@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="title-section">
-                <h1 class="post-title"><?php $home_page->post_title; ?></h1>
+                <h1 class="post-title"><?php echo $home_page->post_title; ?></h1>
             </div>
         </div>
     </div>
