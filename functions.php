@@ -32,10 +32,16 @@ function the_breadcrumb(){
 	echo "<i class='fas fa-home'></i>";
 	echo '</a>' . $seperator;
 
-	if(is_single() || is_category()){
+	if(is_single()){
 		$categories = get_the_category();
-		if(!empty(categories)){
+		if(!empty($categories)){
 			echo get_category_parents($categories[0]->term_id, true, $seperator);
+		}
+	}
+	else if(is_category()){
+		$category = get_category(get_query_var('cat'));
+		if(!empty($category)){
+			echo get_category_parents($category->term_id, true, $seperator);
 		}
 	}
 
