@@ -51,15 +51,17 @@ function the_category_without_link($seperator){
 	$is_output = false;
 	foreach(get_the_category() as $category){
 		if($is_output) echo $seperator;
-		echo $category;
+		echo $category->name;
+		$is_output = true;
 	}
 }
 
 function the_tags_without_link($seperator){
 	$is_output = false;
-	foreach(get_the_tags() as $category){
+	foreach(get_the_tags() as $tag){
 		if($is_output) echo $seperator;
-		echo $category;
+		echo $tag->name;
+		$is_output = true;
 	}
 }
 
