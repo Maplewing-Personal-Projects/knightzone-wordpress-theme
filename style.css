@@ -133,7 +133,7 @@ header ul.header-menu li a {
     position: relative;
     width: 100%;
     min-height: 700px;
-    margin: 0px auto;
+    margin: 0px auto 20px auto;
 }
 
 .header-inner{
