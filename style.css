@@ -355,14 +355,6 @@ footer {
     .outer-container {
         width: 100%;
     }
-
-    ul.post-item-list {
-        width: 100%;
-    }
-
-    li.post-item a.post-item-inner{
-        margin: 0 auto;
-    }
 }
 
 /* Original CSS Style */
