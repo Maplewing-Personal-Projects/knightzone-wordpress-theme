@@ -440,13 +440,36 @@ nav .extra-menu li a:active{
 
     header .nav-section.open {
         position: absolute;
-        top: 50px;
+        top: 100px;
+        width: 100%;
+        z-index: 1500;
         display: flex;
+        background: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 
     header .nav-section.open ul.header-menu {
         flex-flow: column;
     }
+
+    header .nav-section.open ul.header-menu a {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        color: #001E7C;
+    }
+
+    header .nav-section.open ul.header-menu a:hover{
+        background: #001E7C;
+        color: white;
+    }
+
+    header .nav-section.open form.search-form{
+        float: none;
+    }
+
 
     header .nav-button{
         display: block;
