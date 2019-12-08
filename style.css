@@ -324,6 +324,10 @@ footer {
     color: white;
 }
 
+footer .footer-container{
+    width: 1200px;
+}
+
 .pagination-section{
     margin: 10px auto;
 }
@@ -351,12 +355,24 @@ footer {
     color: white;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 @media screen and (max-width: 1200px) {
     .outer-container {
         width: 100%;
     }
 
     ul.post-item-list {
+        width: 100%;
+    }
+
+    footer .footer-container{
         width: 100%;
     }
 }
