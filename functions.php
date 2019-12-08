@@ -66,6 +66,7 @@ function the_breadcrumb(){
 
 function the_category_without_link($seperator){
 	$is_output = false;
+	$seperator = ", ";
 	foreach(get_the_category() as $category){
 		if($is_output) echo $seperator;
 		echo $category->name;
@@ -75,6 +76,7 @@ function the_category_without_link($seperator){
 
 function the_tags_without_link($seperator){
 	$is_output = false;
+	$seperator = ", ";
 	foreach(get_the_tags() as $tag){
 		if($is_output) echo $seperator;
 		echo $tag->name;
