@@ -257,6 +257,13 @@ h1.post-title{
 ul.post-item-list {
     list-style: none;
     width: 85%;
+    padding: 0;
+    margin: 0;
+}
+
+li.post-item{
+    padding: 0;
+    margin: 0;
 }
 
 li.post-item a.post-item-inner{
