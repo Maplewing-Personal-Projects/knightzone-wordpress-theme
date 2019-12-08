@@ -264,9 +264,10 @@ li.post-item a.post-item-inner{
     align-items: stretch;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
-    margin: 0 auto;
+    margin: 15px auto;
     width: 100%;
     min-height: 200px;
+    overflow: hidden;
 
     transform: scale(1);
     transition: transform 0.2s ease-out; 
@@ -274,6 +275,7 @@ li.post-item a.post-item-inner{
 
 li.post-item a.post-item-inner:hover, li.post-item a.post-item-inner:active{
     transform: scale(1.2);
+    z-index: 100;
     text-decoration: none;
 }
 
@@ -281,14 +283,18 @@ li.post-item a.post-item-inner .post-item-thumbnail {
     width: 15%;
 }
 
-li.post-item a.post-item-inner .post-item-category,
-li.post-item a.post-item-inner .post-item-category a {
+li.post-item a.post-item-inner .post-item-meta{
+    padding: 10px;
+}
+
+li.post-item a.post-item-inner .post-item-category{
+    padding: 5px 0px;
     font-size: 12px;
     color: #bbb;
 }
 
-li.post-item a.post-item-inner .post-item-title,
-li.post-item a.post-item-inner .post-item-title a {
+li.post-item a.post-item-inner .post-item-title{
+    padding: 5px 0px;
     font-size: 20px;
     font-weight: bold;
     color: black;
