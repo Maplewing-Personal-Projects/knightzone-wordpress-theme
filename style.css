@@ -263,7 +263,7 @@ ul.post-item-list {
 
 li.post-item{
     padding: 0;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 
 li.post-item a.post-item-inner{
@@ -275,7 +275,7 @@ li.post-item a.post-item-inner{
     background: url(images/me.png) -550% 25% no-repeat white;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
-    margin: 15px auto;
+    margin: 0px auto;
     width: 100%;
     min-height: 200px;
     overflow: hidden;
