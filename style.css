@@ -462,6 +462,7 @@ a.button404 {
     border-radius: 10px;
     background: #001E7C;
     color: white;
+    text-align: center;
 }
 
 a.button404:hover, a.button404:active {
