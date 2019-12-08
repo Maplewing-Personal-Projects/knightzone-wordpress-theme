@@ -328,6 +328,28 @@ footer {
     margin: 10px auto;
 }
 
+.pagination-section nav{
+    text-align: center;
+    font-size: 25px;
+}
+
+.pagination-section nav .page-numbers{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.pagination-section nav a.page-numbers{
+    background: #001E7C;
+    color: white;
+}
+
+.pagination-section nav a.page-numbers:hover,
+.pagination-section nav a.page-numbers:active,
+.pagination-section nav .page-numbers.current {
+    background: white;
+    color: #001E7C;;
+}
+
 @media screen and (max-width: 1200px) {
     .outer-container {
         width: 100%;
