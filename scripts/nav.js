@@ -37,7 +37,7 @@ window.addEventListener("load", function(){
     });
 
     goToTopButton.addEventListener("click", function(){
-        scrollToTop(2000);
+        scrollToTop(1000);
     });
 
     displayGoToTopButton();
