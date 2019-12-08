@@ -82,6 +82,15 @@ function wpdocs_after_setup_theme() {
     add_theme_support( 'html5', array( 'search-form' ) );
 }
 
+function the_all_tags(){
+	$tags = get_tags();
+	echo '<ul>';
+	foreach ($tags as $tag) {
+	echo '<li>' . $tag->name . '</li>';
+	}
+	echo '</ul>';
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );

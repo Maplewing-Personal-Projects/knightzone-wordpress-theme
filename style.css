@@ -466,6 +466,10 @@ nav .extra-menu li a:active{
     color: white;
 }
 
+.list-total-categories, .list-total-tags{
+    column-count: 3;
+}
+
 @media screen and (max-width: 1200px) {
     header {
         width: 100%;

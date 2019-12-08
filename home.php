@@ -20,7 +20,13 @@
         <h2>分類瀏覽</h2>
         <div class="list-total-categories">
         <?php
-            wp_list_categories();
+            wp_list_categories(array("title_li" => ""));
+        ?>
+        </div>
+        <h2>標籤瀏覽</h2>
+        <div class="list-total-tags">
+        <?php
+            the_all_tags();
         ?>
         </div>
         <h2>最新文章</h2>
