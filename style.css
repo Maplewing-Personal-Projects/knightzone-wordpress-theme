@@ -221,22 +221,57 @@ header ul.header-menu li a {
 @keyframes playlogo{
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotateY(360deg) rotateZ(0);
     }
 
-    5% {
+    6% {
         opacity: 1;
-        transform: translateY(0px) rotateY(0);
+        transform: translateY(0px) rotateY(0) rotateZ(0);
     }
 
-    95% {
+    17% {
         opacity: 1;
-        transform: translateY(0px) rotateY(360);
+        transform: translateY(0px) rotateY(0) rotateZ(20deg);
+    }
+
+    28% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(0deg);
+    }
+
+    39% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(-20deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(0deg);
+    }
+
+    61% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(20deg);
+    }
+
+    72% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(0deg);
+    }
+
+    83% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(-20deg);
+    }
+
+    94% {
+        opacity: 1;
+        transform: translateY(0px) rotateY(0) rotateZ(0deg);
     }
 
     100% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px) rotateY(360deg);
     }
 }
 
