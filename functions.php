@@ -59,6 +59,9 @@ function the_breadcrumb(){
 	else if(is_search()){
 		the_search_title();
 	}
+	else if(is_404()){
+		echo "!@#%$@$^@$^@#%!$!";
+	}
 }
 
 function the_category_without_link($seperator){

@@ -455,6 +455,21 @@ nav .extra-menu li a:active{
     column-count: 3;
 }
 
+a.button404 {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #001E7C;
+    color: white;
+}
+
+a.button404:hover, a.button404:active {
+    background: white;
+    color: #001E7C;
+    border: 1px solid black;
+}
+
 @media screen and (max-width: 1200px) {
     header {
         width: 100%;
