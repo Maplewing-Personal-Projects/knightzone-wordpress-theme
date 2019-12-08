@@ -111,7 +111,7 @@ header ul.header-menu li a {
     padding: 0px;
     margin: 200px auto 50px auto;
     background: white;
-    box-shadow: 10px 10px 5px #000000;
+    box-shadow: 14px 16px 22px #000000;
 }
 
 .me{
@@ -135,6 +135,16 @@ header ul.header-menu li a {
     width: 100%;
     min-height: 700px;
     margin: 0px auto 20px auto;
+}
+
+.page-header{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 0px auto 20px auto;
+    background: url("images/page_background.png");
+    background-size: cover; 
+    background-position: center center;
 }
 
 .header-inner{
