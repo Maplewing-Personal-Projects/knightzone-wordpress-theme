@@ -98,14 +98,14 @@ header .nav-button {
     display: none;
 }
 
-header .nav-button {
+header .nav-button button{
     border: 0px;
     padding: 40px;
     background: #001E7C;
     color: white;
 }
 
-header .nav-button:hover, header .nav-button.active {
+header .nav-button button:hover, header .nav-button button:active {
     background: white;
     color: #001E7C;
 }
