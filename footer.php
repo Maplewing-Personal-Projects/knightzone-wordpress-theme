@@ -1,4 +1,3 @@
-</div> <!-- close for div.background-mask -->
 <footer class="site-footer">
     <div class="footer-container">
         <section class="copyright"><?php bloginfo('name') ?> ( <?php bloginfo('url') ?> ) By 灆洢 ( Maplewing )</section>
@@ -11,5 +10,6 @@
 </footer>
  
 <?php wp_footer() ?>
+</div> <!-- close for div.background-mask -->
 </body>
 </html>
