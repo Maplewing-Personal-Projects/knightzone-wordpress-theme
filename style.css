@@ -226,12 +226,12 @@ header ul.header-menu li a {
 
     5% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) rotateY(0);
     }
 
     95% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) rotateY(360);
     }
 
     100% {
