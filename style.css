@@ -23,6 +23,7 @@ html, body {
     font-size: 18px;
     border: none;
     outline: none;
+    border: 1px solid white;
     background-color: #001E7C;
     color: white;
     cursor: pointer;
