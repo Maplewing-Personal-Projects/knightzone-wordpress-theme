@@ -6,6 +6,8 @@ Version: 1.0
 */
 
 html, body {
+    display: flex;
+    flex-flow: column;
     padding: 0px;
     margin: 0px;
     font-family: 'Source Han Serif TC SemiBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -387,8 +389,6 @@ li.post-item a.post-item-inner .post-item-title{
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 0px;
     margin: 0px;
