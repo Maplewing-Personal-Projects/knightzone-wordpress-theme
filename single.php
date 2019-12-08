@@ -35,7 +35,7 @@
                     <i class="fas fa-user"></i> <?php echo get_avatar(get_the_author_email(), "40"); ?><?php the_author(); ?>
                   </span>
                   <span class="header-item">
-                    <i class="fas fa-clock"></i> <?php the_date('Y-m-d'); ?> <?php the_time('H:i:s'); ?></p>
+                    <i class="fas fa-clock"></i> <?php echo get_the_date('Y-m-d'); ?> <?php the_time('H:i:s'); ?></p>
                   </span>
                 </div>
               </div>
