@@ -264,6 +264,7 @@ li.post-item a.post-item-inner{
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
     align-items: stretch;
+    background-color: white;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
     margin: 15px auto;
@@ -284,13 +285,13 @@ li.post-item a.post-item-inner:hover, li.post-item a.post-item-inner:active{
 li.post-item a.post-item-inner .post-item-thumbnail {
     grid-column: 1 / span 1 ;
     grid-row: 1 / span 1 ;
-    width: 15%;
 }
 
 li.post-item a.post-item-inner .post-item-meta{
     grid-column: 2 / span 1 ;
-    grid-row: 2 / span 1 ;
-    padding: 10px;
+    grid-row: 1 / span 1 ;
+    padding: 10px 25px;
+    background: url("images/me.png") bottom right no-repeat;
 }
 
 li.post-item a.post-item-inner .post-item-category{
