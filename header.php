@@ -31,7 +31,7 @@
         <?php wp_nav_menu( array( 
             'theme_location' => 'header-menu',
             'menu_class' => 'header-menu' ) ); ?>
-        <div class="search_form_wrapper">
+        <div class="search-form-wrapper">
             <?php get_search_form(); ?>
         </div>
     </div>
