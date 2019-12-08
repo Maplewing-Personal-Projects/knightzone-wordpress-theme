@@ -12,7 +12,7 @@
     <article class="post">
         <?php
             $home_page = get_post(3667);
-            $content = home_page->post_content;
+            $content = $home_page->post_content;
             $content = apply_filters('the_content', $content);
             $content = str_replace(']]>', ']]>', $content);
             echo $content;
