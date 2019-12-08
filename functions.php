@@ -96,6 +96,17 @@ function the_all_tags(){
 	echo '</ul>';
 }
 
+function shapeSpace_truncate_string($phrase, $max_words) {
+	
+	$phrase_array = explode(' ', $phrase);
+	
+	if (count($phrase_array) > $max_words && $max_words > 0) 
+		$phrase = implode(' ', array_slice($phrase_array, 0, $max_words)) . __('...', 'shapespace');
+	
+	return $phrase;
+	
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );
