@@ -17,14 +17,13 @@
             $content = str_replace(']]>', ']]>', $content);
             echo $content;
         ?>
-        <h2>分類瀏覽</h2>
         <div class="list-total-categories">
         <?php
-            wp_list_categories(array("title_li" => ""));
+            wp_list_categories(array("title_li" => "<h2>分類瀏覽</h2>"));
         ?>
         </div>
-        <h2>標籤瀏覽</h2>
         <div class="list-total-tags">
+        <h2>標籤瀏覽</h2>
         <?php
             the_all_tags();
         ?>
