@@ -16,7 +16,7 @@
         </div>
     </div>
     <article class="post">
-        <a href="<?php bloginfo("url"); ?>" class="404-button">回首頁看看吧！</a>
+        <a href="<?php bloginfo("url"); ?>" class="button404">回首頁看看吧！</a>
     </article>
   </div>
 </div>
