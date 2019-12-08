@@ -355,6 +355,10 @@ footer {
     .outer-container {
         width: 100%;
     }
+
+    ul.post-item-list {
+        width: 100%;
+    }
 }
 
 /* Original CSS Style */
