@@ -25,6 +25,7 @@
         ?>
             <li class="post-item">
                 <a class="post-item-inner" href="<?php the_permalink(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me-watermark"/>
                 <div class="post-item-thumbnail" 
                     style="background: <?php if(has_post_thumbnail()): ?> url('<?php the_post_thumbnail_url(); ?>') <?php endif; ?> #999; background-size: cover; background-position: center center;">
                 </div>

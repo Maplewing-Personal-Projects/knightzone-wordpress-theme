@@ -272,7 +272,7 @@ li.post-item a.post-item-inner{
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
     align-items: stretch;
-    background: url(images/me.png) -550% 25% no-repeat white;
+    background: white;
     box-shadow: 4px 3px 9px #000000;
     border-radius: 13px;
     margin: 0px auto;
@@ -283,6 +283,13 @@ li.post-item a.post-item-inner{
     transform: scale(1);
     transition: transform 0.2s ease-out; 
 }
+
+li.post-item a.post-item-inner .me-watermark{
+    position: absolute;
+    right: -50%;
+    bottom: -50%;
+}
+
 
 li.post-item a.post-item-inner:hover, li.post-item a.post-item-inner:active{
     transform: scale(1.2);
