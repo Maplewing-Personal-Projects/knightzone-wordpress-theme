@@ -339,15 +339,16 @@ footer {
 }
 
 .pagination-section nav a.page-numbers{
-    background: #001E7C;
-    color: white;
+    background: white;
+    color: #001E7C;
+    border: 1px solid black;
 }
 
 .pagination-section nav a.page-numbers:hover,
 .pagination-section nav a.page-numbers:active,
 .pagination-section nav .page-numbers.current {
-    background: white;
-    color: #001E7C;;
+    background: #001E7C;
+    color: white;
 }
 
 @media screen and (max-width: 1200px) {
