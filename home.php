@@ -1,29 +1,37 @@
 <?php get_header(); ?>
-
+<?php
+    $home_page = get_post(3667);
+?>
 <div class="outer-container">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me"/>
+<img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me"/>
   <div class="container">
-    <div class="content-header home-header"
-        style="background: url('<?php header_image(); ?>'); background-size: cover; background-position: center center;">
-        <div class="home-header-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/theme_logo.png" class="theme-logo"/>
+    <div class="content-header home-header">
+        <div class="header-inner">
+            <div class="breadcrumb">
+                <div class="breadcrumb-inner">
+                    <?php the_breadcrumb(); ?>
+                </div>
+            </div>
+            <div class="title-section">
+                <h1 class="post-title"><?php $home_page->post_title; ?></h1>
+            </div>
         </div>
     </div>
     <article class="post">
         <?php
-            $home_page = get_post(3667);
             $content = $home_page->post_content;
             $content = apply_filters('the_content', $content);
             $content = str_replace(']]>', ']]>', $content);
             echo $content;
         ?>
+        <h2>分類瀏覽</h2>
         <div class="list-total-categories">
         <?php
-            wp_list_categories(array("title_li" => "<h2>分類瀏覽</h2>"));
+            wp_list_categories(array("title_li" => "全部分類"));
         ?>
         </div>
-        <div class="list-total-tags">
         <h2>標籤瀏覽</h2>
+        <div class="list-total-tags">
         <?php
             the_all_tags();
         ?>

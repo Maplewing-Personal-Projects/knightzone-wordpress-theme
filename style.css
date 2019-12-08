@@ -193,6 +193,12 @@ header ul.header-menu li a {
     background-position: center 34%;
 }
 
+.content-header.home-header{
+    background: url("images/page_background.png");
+    background-size: cover; 
+    background-position: center center;
+}
+
 .home-header{
     position: relative;
     top: 0;
@@ -202,32 +208,6 @@ header ul.header-menu li a {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
-}
-
-.home-header .home-header-logo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.home-header img.theme-logo{
-    width: 85%;
-    height: auto;
-    animation: playlogo 0.3s ease-out 0s
-}
-
-@keyframes playlogo{
-    from {
-        opacity: 0;
-        transform: translateY(-20px) rotateY(360deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px) rotateY(0);
-    }
 }
 
 .search-header{
@@ -270,6 +250,10 @@ header ul.header-menu li a {
 }
 
 .search-header .title-section{
+    border-left: 10px solid #f54287;
+}
+
+.home-header .title-section{
     border-left: 10px solid #4263f5;
 }
 
