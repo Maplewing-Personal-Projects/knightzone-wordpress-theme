@@ -114,12 +114,6 @@ header ul.header-menu li a {
     box-shadow: 14px 16px 22px #000000;
 }
 
-@media screen and (max-width: 1200px) {
-    .outer-container {
-        width: 100%;
-    }
-}
-
 .me{
     position: absolute;
     top: -255px;
@@ -323,6 +317,16 @@ footer {
 
 .pagination-section{
     margin: 10px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .outer-container {
+        width: 100%;
+    }
+
+    ul.post-item-list {
+        width: 100%;
+    }
 }
 
 /* Original CSS Style */
