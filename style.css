@@ -15,7 +15,7 @@ html, body {
 }
 
 div.background-halftone{
-    display: fixed;
+    position: fixed;
     height: 100%;
     transform: scale(-1);
 
