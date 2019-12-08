@@ -75,7 +75,6 @@ a:hover, a:active{
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1200px;
     margin: 0px auto;
     padding-top: 20px;
@@ -90,7 +89,6 @@ header .logo-section img {
 header .nav-section {
     display: flex;
     flex-flow: column;
-    align-items: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -130,6 +128,7 @@ header ul.header-menu {
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    margin-bottom: 10px;
 }
 
 header ul.header-menu li a {
