@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="title-section">
-                <h1 class="post-title"><?php echo get_search_query() ?></h1>
+                <h1 class="post-title"><?php the_search_title(); ?></h1>
             </div>
         </div>
     </div>

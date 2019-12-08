@@ -52,7 +52,7 @@ function the_breadcrumb(){
 		the_archive_title();
 	}
 	else if(is_search()){
-		echo _e("搜尋：") . get_search_query();
+		the_search_title();
 	}
 }
 
@@ -72,6 +72,10 @@ function the_tags_without_link($seperator){
 		echo $tag->name;
 		$is_output = true;
 	}
+}
+
+function the_search_title(){
+	echo _e("搜尋結果：") . get_search_query();
 }
 
 function wpdocs_after_setup_theme() {
