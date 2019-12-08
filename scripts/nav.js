@@ -20,9 +20,9 @@ window.addEventListener("load", function(){
 
     window.addEventListener("scroll", function () {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
+            goToTopButton.style.display = "block";
         } else {
-          mybutton.style.display = "none";
+            goToTopButton.style.display = "none";
         }
     });
 
