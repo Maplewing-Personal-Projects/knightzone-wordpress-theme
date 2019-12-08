@@ -172,6 +172,10 @@ header ul.header-menu li a {
     border-left: 10px solid #f55d42;
 }
 
+.archive-header .title-section{
+    border-left: 10px solid #9642f5;
+}
+
 .breadcrumb {
     position: absolute;
     top: 0;

@@ -42,6 +42,9 @@ function the_breadcrumb(){
 	if(is_single() || is_page()){
 		the_title();
 	}
+	else if(is_archive()){
+		the_archive_title();
+	}
 }
 
 add_theme_support( 'custom-background' );
