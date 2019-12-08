@@ -5,8 +5,9 @@
   <div class="container">
     <div class="content-header home-header"
         style="background: url('<?php header_image(); ?>'); background-size: cover; background-position: center center;">
-            
-        <img src="<?php echo get_template_directory_uri(); ?>/images/theme_logo.png" class="theme-logo"/>
+        <div class="home-header-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/theme_logo.png" class="theme-logo"/>
+        </div>
     </div>
     <article class="post">
         <?php
