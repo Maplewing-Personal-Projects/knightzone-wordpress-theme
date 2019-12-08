@@ -126,16 +126,13 @@ header .nav-section form.search-form input.search-submit:active{
 }
 
 header ul.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
 }
 
-header ul.header-menu li{
-    float: left;
-}
-
 header ul.header-menu li a {
-    display: block;
-    height: 30px;
     padding: 8px;
 }
 
