@@ -1,6 +1,6 @@
 <footer class="site-footer">
     <div class="footer-container">
-        <section><?php bloginfo('name') ?> ( <?php bloginfo('url') ?> ) By 灆洢 ( Maplewing )</section>
+        <section class="copyright"><?php bloginfo('name') ?> ( <?php bloginfo('url') ?> ) By 灆洢 ( Maplewing )</section>
         <nav>
             <?php wp_nav_menu( array( 
             'theme_location' => 'extra-menu',

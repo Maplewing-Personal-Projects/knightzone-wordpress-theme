@@ -318,7 +318,7 @@ li.post-item a.post-item-inner .post-item-title{
 
 footer {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     margin: 0px;
     background-color: black;
     color: white;
@@ -327,16 +327,29 @@ footer {
 footer .footer-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1200px;
+}
+
+footer .footer-container .copyright{
+    padding-left: 20px;
 }
 
 nav .extra-menu {
     display: flex;
     list-style: none;
+    padding-right: 20px;
 }
 
 nav .extra-menu li a{
-    font-size: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+nav .extra-menu li a:hover,
+nav .extra-menu li a:active{
+    font-size: 40px;
+    color: #001E7C;
 }
 
 .pagination-section{
@@ -369,6 +382,8 @@ nav .extra-menu li a{
 @media screen and (max-width: 1200px) {
     .outer-container {
         width: 100%;
+        box-shadow: 0;
+        border-radius: 0;
     }
 
     ul.post-item-list {
