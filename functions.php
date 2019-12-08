@@ -57,7 +57,7 @@ function the_category_without_link($seperator){
 
 function the_tags_without_link($seperator){
 	$is_output = false;
-	foreach(get_the_tag() as $category){
+	foreach(get_the_tags() as $category){
 		if($is_output) echo $seperator;
 		echo $category;
 	}
