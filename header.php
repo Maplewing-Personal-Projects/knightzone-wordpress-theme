@@ -19,6 +19,7 @@
 </head>
  
 <body <?php body_class(); ?>>
+<button id="go_to_top_button" class="go-to-top-button" title="Go to top">↑</button>
 <div class="background-mask">
 <header class="site-header">
     <div class="logo-section"><a href="<?php echo home_url(); ?>">
