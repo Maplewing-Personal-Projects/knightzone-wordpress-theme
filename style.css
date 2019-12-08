@@ -411,6 +411,10 @@ nav .extra-menu li a:active{
 }
 
 @media screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+    }
+
     .outer-container {
         width: 100%;
         box-shadow: 0;
