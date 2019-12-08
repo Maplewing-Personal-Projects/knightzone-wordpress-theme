@@ -94,6 +94,22 @@ header .nav-section {
     overflow: hidden;
 }
 
+header .nav-button {
+    display: none;
+}
+
+header .nav-button {
+    border: 0px;
+    padding: 40px;
+    background: #001E7C;
+    color: white;
+}
+
+header .nav-button:hover, header .nav-button.active {
+    background: white;
+    color: #001E7C;
+}
+
 header .nav-section form.search-form {
     float: right;
 }
@@ -413,6 +429,14 @@ nav .extra-menu li a:active{
 @media screen and (max-width: 1200px) {
     header {
         width: 100%;
+    }
+
+    header .nav-section{
+        display: none;
+    }
+
+    header .nav-section{
+        display: block;
     }
 
     .outer-container {

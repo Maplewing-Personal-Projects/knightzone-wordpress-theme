@@ -35,4 +35,7 @@
             <?php get_search_form(); ?>
         </div>
     </div>
+    <div class="nav-button">
+        <button><i class="fas fa-bars"></i></button>        
+    </div>
 </header>
