@@ -140,7 +140,7 @@ header ul.header-menu li a {
 .page-header{
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
     margin: 0px auto 20px auto;
     background: url("images/page_background.png");
     background-size: cover; 
