@@ -147,6 +147,16 @@ header ul.header-menu li a {
     background-position: center 34%;
 }
 
+.archive-header{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 0px auto 20px auto;
+    background: url("images/page_background.png");
+    background-size: cover; 
+    background-position: center 34%;
+}
+
 .header-inner{
     position: absolute;
     background: rgba(0,0,0, 0.7);
