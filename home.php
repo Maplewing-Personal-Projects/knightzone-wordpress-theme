@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
-<div class="home-outer-container">
+<div class="outer-container">
+  <img src="<?php echo get_template_directory_uri(); ?>/images/me.png" class="me"/>
   <div class="container">
-    <div class="home-header"
-        style="background: url('<?php header_image(); ?>')  background-size: cover; background-position: center center;">
+    <div class="content-header home-header">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/theme_logo.png" class="theme-logo"/>
     </div>
     <article class="post">
         <?php
