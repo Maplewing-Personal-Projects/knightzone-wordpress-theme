@@ -52,6 +52,7 @@
             endwhile;
         ?>
             </ul>
+        <div class="pagination-section">
         <?php
         the_posts_pagination(array(
             'end_size' => 5,
@@ -61,6 +62,7 @@
         ));
         endif;
         ?>
+        </div>
     </article>
   </div>
 </div>
