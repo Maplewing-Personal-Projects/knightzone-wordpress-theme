@@ -88,12 +88,15 @@ header .logo-section img {
     height: 100px;
 }
 
-header ul.header-menu {
+header .nav-section {
     float: right;
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+header ul.header-menu {
+    list-style-type: none;
 }
 
 header ul.header-menu li{

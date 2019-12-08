@@ -71,10 +71,15 @@ function the_tags_without_link($seperator){
 	}
 }
 
+function wpdocs_after_setup_theme() {
+    add_theme_support( 'html5', array( 'search-form' ) );
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 
 add_action( 'init', 'register_my_menus' );
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 ?>
