@@ -110,6 +110,16 @@ function shapeSpace_truncate_string($phrase, $max_words) {
 	
 }
 
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        unset( $tags['og:image'] );
+
+        $fb_home_img = get_template_directory_uri() . '/images/page_background.png';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );
@@ -119,4 +129,5 @@ add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts/nav.js', array(), false, true);
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
 ?>
