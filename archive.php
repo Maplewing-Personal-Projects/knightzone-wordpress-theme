@@ -31,6 +31,9 @@
                 <div class="post-item-meta">
                     <div class="post-item-category">
                         <span class="header-item">
+                            <i class="fas fa-clock"></i> <?php the_date('Y-m-d'); ?> <?php the_time('H:i:s'); ?></p>
+                        </span>
+                        <span class="header-item">
                             <i class="fas fa-folder-open"></i> <?php the_category_without_link(",&nbsp;"); ?>
                         </span>
                         <?php if(has_tag()): ?> 
