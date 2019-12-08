@@ -51,6 +51,9 @@ function the_breadcrumb(){
 	else if(is_archive()){
 		the_archive_title();
 	}
+	else if(is_search()){
+		echo _e("搜尋：") . get_search_query();
+	}
 }
 
 function the_category_without_link($seperator){
