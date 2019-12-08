@@ -111,6 +111,7 @@ header ul.header-menu li a {
     padding: 0px;
     margin: 200px auto 50px auto;
     background: white;
+    box-shadow: #000;
 }
 
 .me{
