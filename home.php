@@ -89,7 +89,7 @@
             <?php $args_comments = array('number' => 10, 'status' => 'approve');
             $recent_comments = get_comments($args_comments);
             foreach ($recent_comments as $r) {
-                echo '<li><a href="'. get_comment_link($r->comment_ID) .'" title="'. __('Date/time:', 'shapespace') . $r->comment_date .'">';
+                echo '<li><a href="'. get_comment_link($r->comment_ID) .'" title="'. __('時間:', 'shapespace') . $r->comment_date .'">';
                 echo $r->comment_author .'</a>: ';
                 echo shapeSpace_truncate_string(get_comment_excerpt($r->comment_ID), 12) .'</li>';
             } ?>
