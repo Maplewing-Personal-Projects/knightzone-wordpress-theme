@@ -453,8 +453,8 @@ footer .footer-container .tag-navigator
     font-size: small;
 }
 
-footer .footer-container .category-navigator *,
-footer .footer-container .tag-navigator * {
+footer .footer-container .category-navigator > *,
+footer .footer-container .tag-navigator > * {
     padding: 0px 20px;
 }
 
