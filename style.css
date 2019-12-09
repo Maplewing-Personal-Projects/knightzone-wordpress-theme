@@ -414,6 +414,20 @@ footer {
     margin: 0px;
     background-color: black;
     color: white;
+    font-size: xx-small;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+}
+
+footer .category-navigator,
+footer .tag-navigator
+{
+    margin-top: 10px;
 }
 
 footer .footer-container{
@@ -421,7 +435,7 @@ footer .footer-container{
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 footer .footer-container .copyright{
