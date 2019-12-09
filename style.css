@@ -420,19 +420,6 @@ footer a {
     color: white;
 }
 
-footer .category-navigator,
-footer .tag-navigator
-{
-    width: 100%;
-    margin: 10px auto;
-    font-size: small;
-}
-
-footer .category-navigator h2,
-footer .tag-navigator h2{
-    font-size: normal;
-}
-
 
 footer .footer-container{ 
     display: flex;
@@ -445,6 +432,7 @@ footer .footer-container{
 
 footer .footer-container .copyright-wrapper{
     width: 100%;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,6 +441,21 @@ footer .footer-container .copyright-wrapper{
 footer .footer-container .copyright{
     padding-left: 20px;
 }
+
+footer .footer-container .category-navigator,
+footer .footer-container .tag-navigator
+{
+    width: 100%;
+    padding: 0px 10px;
+    margin: 10px auto;
+    font-size: small;
+}
+
+footer .footer-container .category-navigator h2,
+footer .footer-container .tag-navigator h2{
+    font-size: large;
+}
+
 
 nav .extra-menu {
     display: flex;
