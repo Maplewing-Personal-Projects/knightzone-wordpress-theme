@@ -414,11 +414,6 @@ footer {
     margin: 0px;
     background-color: black;
     color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 footer a {
@@ -428,6 +423,7 @@ footer a {
 footer .category-navigator,
 footer .tag-navigator
 {
+    width: 100%;
     margin: 10px auto;
     font-size: small;
 }
@@ -438,12 +434,20 @@ footer .tag-navigator h2{
 }
 
 
-footer .footer-container{
+footer .footer-container{ 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 1200px;
     margin: 0px auto;
+}
+
+footer .footer-container .copyright-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .footer-container .copyright{
