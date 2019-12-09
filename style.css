@@ -432,7 +432,6 @@ footer .footer-container{
 
 footer .footer-container .copyright-wrapper{
     width: 100%;
-    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -442,13 +441,21 @@ footer .footer-container .copyright{
     padding-left: 20px;
 }
 
+footer .footer-container nav {
+    padding-right: 20px;
+}
+
 footer .footer-container .category-navigator,
 footer .footer-container .tag-navigator
 {
     width: 100%;
-    padding: 0px 10px;
     margin: 10px auto;
     font-size: small;
+}
+
+footer .footer-container .category-navigator *,
+footer .footer-container .tag-navigator * {
+    padding: 0px 20px;
 }
 
 footer .footer-container .category-navigator h2,
