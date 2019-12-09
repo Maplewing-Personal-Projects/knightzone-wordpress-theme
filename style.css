@@ -414,10 +414,11 @@ footer {
     margin: 0px;
     background-color: black;
     color: white;
-    font-size: xx-small;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer a {
@@ -427,8 +428,15 @@ footer a {
 footer .category-navigator,
 footer .tag-navigator
 {
-    margin-top: 10px;
+    margin: 10px auto;
+    font-size: small;
 }
+
+footer .category-navigator h2,
+footer .tag-navigator h2{
+    font-size: normal;
+}
+
 
 footer .footer-container{
     display: flex;
