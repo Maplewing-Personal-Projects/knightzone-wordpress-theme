@@ -6,12 +6,18 @@ Version: 1.0
 */
 
 html, body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Han Serif TC', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-family: source-han-serif-tc, serif;
     font-size: 17px;
     line-height: 1.8;
     height: 100%;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 700;
 }
 
 .go-to-top-button {
@@ -637,10 +643,6 @@ a.button404:hover, a.button404:active {
 }
 .markdown-content blockquote p {
   display: inline;
-}
-
-h1, h2, h3, h4, h5, h6, strong, b{
-	font-weight: bold !important;
 }
 
 pre.prettyprint {
