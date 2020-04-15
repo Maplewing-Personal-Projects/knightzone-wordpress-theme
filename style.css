@@ -646,7 +646,7 @@ a.button404:hover, a.button404:active {
   display: inline;
 }
 
-.markdown-content code.prettyprint{
+.markdown-content code.prettyprinted{
     padding: .2em .4em;
     margin: 0;
     font-size: 85%;
