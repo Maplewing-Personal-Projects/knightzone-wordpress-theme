@@ -641,8 +641,17 @@ a.button404:hover, a.button404:active {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 .markdown-content blockquote p {
   display: inline;
+}
+
+.markdown-content code.prettyprint{
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
 }
 
 pre.prettyprint {
