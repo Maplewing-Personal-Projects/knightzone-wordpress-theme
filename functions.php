@@ -130,14 +130,14 @@ function autoset_featured() {
 	if (!$already_has_thumb)  {
 		$attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
 		if ($attached_image) {
-				foreach ($attached_image as $attachment_id => $attachment) {
-						set_post_thumbnail($post->ID, $attachment_id);
-				}
+			foreach ($attached_image as $attachment_id => $attachment) {
+				set_post_thumbnail($post->ID, $attachment_id);
+			}
 		}
 		else {
 			$content = $post->$post_content;
-			$image_regular_expression = "/!\[.*\]\((.*)\)/";
-			if (preg_match_all($image_regular_expression, $content, $matches)){
+			$image_regular_expression = "/!\[[^\]]*\]\(([^)]*)\)/";
+			if (preg_match_all($image_regular_expression, $content, $matches, PREG_SET_ORDER)){
 				foreach ($matches as $match) {
 					$attachment_id = attachment_url_to_postid($match[1]);
 					if ($attachment_id != 0) {
