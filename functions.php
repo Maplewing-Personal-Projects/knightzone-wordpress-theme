@@ -125,16 +125,28 @@ function fb_home_image( $tags ) {
 }
 
 function autoset_featured() {
-    global $post;
-    $already_has_thumb = has_post_thumbnail($post->ID);
-        if (!$already_has_thumb)  {
-        $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
-            if ($attached_image) {
-                foreach ($attached_image as $attachment_id => $attachment) {
-                    set_post_thumbnail($post->ID, $attachment_id);
-                }
-            }
-        }
+	global $post;
+	$already_has_thumb = has_post_thumbnail($post->ID);
+	if (!$already_has_thumb)  {
+		$attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
+		if ($attached_image) {
+				foreach ($attached_image as $attachment_id => $attachment) {
+						set_post_thumbnail($post->ID, $attachment_id);
+				}
+		}
+		else {
+			$content = $post->$post_content;
+			$image_regular_expression = "/!\[.*\]\((.*)\)/";
+			if (preg_match_all($image_regular_expression, $content, $matches)){
+				foreach ($matches as $match) {
+					$attachment_id = attachment_url_to_postid($match[1]);
+					if ($attachment_id != 0) {
+						set_post_thumbnail($post->ID, $attachment_id);
+					}
+				}
+			}
+		}
+	}
 }
 
 add_theme_support( 'custom-background' );
