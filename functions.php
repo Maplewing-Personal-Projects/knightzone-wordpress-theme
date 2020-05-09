@@ -124,6 +124,19 @@ function fb_home_image( $tags ) {
     return $tags;
 }
 
+function autoset_featured() {
+    global $post;
+    $already_has_thumb = has_post_thumbnail($post->ID);
+        if (!$already_has_thumb)  {
+        $attached_image = get_children( "post_parent=$post->ID&post_type=attachment&post_mime_type=image&numberposts=1" );
+            if ($attached_image) {
+                foreach ($attached_image as $attachment_id => $attachment) {
+                    set_post_thumbnail($post->ID, $attachment_id);
+                }
+            }
+        }
+}
+
 add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );
@@ -133,5 +146,13 @@ add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts/nav.js', array(), false, true);
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+
+add_action('the_post', 'autoset_featured');
+add_action('save_post', 'autoset_featured');
+add_action('draft_to_publish', 'autoset_featured');
+add_action('new_to_publish', 'autoset_featured');
+add_action('pending_to_publish', 'autoset_featured');
+add_action('future_to_publish', 'autoset_featured');
+
 add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
 ?>
