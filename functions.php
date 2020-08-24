@@ -134,4 +134,10 @@ wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts/nav.js', a
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
+add_filter( 'kses_allowed_protocols', 'htdat_kses_allowed_protocols', 10, 1 );
+               
+function htdat_kses_allowed_protocols( $protocols ) {
+  $protocols[] = 'data';
+  return $protocols;
+}
 ?>
