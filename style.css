@@ -628,6 +628,7 @@ a.button404:hover, a.button404:active {
 }
 
 .markdown-content table {
+  width: 90%;
   padding: 0; 
 }
 
