@@ -15,6 +15,9 @@
         })(document);
     </script>
     <script src="https://kit.fontawesome.com/35ef04b0bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <?php wp_head() ?>
 </head>
  
